@@ -733,9 +733,10 @@ html.lenis, html.lenis body {
     display: inline-block;
 }
 
-/* 라이트 모드일 때 h1 색상을 직접 강제로 변경 */
+/* 라이트 모드일 때 h1 글씨에만 그라데이션 적용 */
 [data-theme="light"] h1 {
     background: linear-gradient(45deg, #1a1a1f, var(--text-muted)) !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }

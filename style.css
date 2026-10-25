@@ -603,3 +603,44 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* 카드 링크 래퍼 스타일 */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* 카드 내부 Flexbox 설정 (기존 .card 스타일 수정 또는 덮어쓰기) */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 카드 호버 시 링크 영역 설정 변경 */
+.card-link:hover .card {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+.card-link:hover .card::before {
+    background-color: var(--accent-color);
+}
+
+/* 카드 화살표 스타일 */
+.card .arrow {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-muted);
+    transition: transform var(--transition-speed), color var(--transition-speed);
+    padding-left: 1rem;
+}
+
+/* 카드 호버 시 화살표 인터랙션 */
+.card-link:hover .card .arrow {
+    color: var(--accent-color);
+    transform: translateX(6px);
+}

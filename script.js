@@ -61,4 +61,27 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    const sidebar = document.getElementById('sidebar');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebarClose = document.getElementById('sidebarClose');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    if (sidebarToggle && sidebar && sidebarClose && sidebarOverlay) {
+        // 메뉴 버튼 클릭 시 사이드바 열기
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+
+        // 닫기 함수
+        const closeSidebar = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        // 닫기 버튼 또는 외부 배경 클릭 시 사이드바 닫기
+        sidebarClose.addEventListener('click', closeSidebar);
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
 });

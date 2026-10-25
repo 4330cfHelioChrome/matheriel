@@ -35,10 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (currentTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
-        if (themeToggleBtn) themeToggleBtn.textContent = '☀️';
+        if (themeToggleBtn) {
+            themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+        }
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        if (themeToggleBtn) themeToggleBtn.textContent = '🌙';
+        if (themeToggleBtn) {
+            themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+        }
     }
 
     // 버튼 클릭 이벤트 리스너
@@ -49,11 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (theme === 'light') {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
-                themeToggleBtn.textContent = '🌙';
+                themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
             } else {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
-                themeToggleBtn.textContent = '☀️';
+                themeToggleBtn.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
             }
         });
     }

@@ -14,13 +14,43 @@
 </head>
 <body>
     <header>
-        <!-- 왼쪽에 Grammar로 돌아가는 화살표 -->
-        <a href="../grammar.html" class="back-arrow-btn" title="Back to Grammar">
-            ←
-        </a>
-        <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme"><span class="material-symbols-outlined">light_mode</span></button></li>
+        <div class="header-left">
+            <!-- 사이드바 열기 버튼 -->
+            <button id="sidebarToggle" class="sidebar-toggle-btn" aria-label="Toggle Sidebar">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <!-- Grammar로 돌아가는 화살표 -->
+            <a href="../grammar.html" class="back-arrow-btn" title="Back to Grammar">
+                ←
+            </a>
+        </div>
+        <div class="header-right">
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+        </div>
     </header>
     
+    <!-- 접었다 펼 수 있는 사이드바 네비게이션 -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Grammar Index</h3>
+            <button id="sidebarClose" class="sidebar-close-btn" aria-label="Close Sidebar">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <ul class="sidebar-list">
+            <!-- 현재 보고 있는 페이지에는 active-sub-link 클래스를 추가해 주세요 -->
+            <li><a href="sentence-structures.html" class="active-sub-link">Sentence Structures</a></li>
+            <!-- 하위 문서가 추가될 때마다 아래와 같이 리스트를 계속 추가하시면 됩니다 -->
+            <li><a href="parts-of-speech.html">Parts of Speech</a></li>
+            <li><a href="verb-conjugation.html">Verb Conjugation</a></li>
+        </ul>
+    </aside>
+
+    <!-- 사이드바가 열렸을 때 배경 어두워지는 오버레이 -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
     <main>
         <h1>Sentence Structures</h1>
         <p class="subtitle">Discover Matheriel's core structure.</p>

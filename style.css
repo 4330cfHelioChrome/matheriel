@@ -109,7 +109,7 @@ h1 {
     margin-bottom: 0.5rem;
     color: var(--text-color);
     letter-spacing: -1px;
-    background: linear-gradient(45deg, #ffffff, var(--text-muted));
+    background: linear-gradient(45deg, var(--h1-gradient-start), var(--text-muted)); /* 변수 적용 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

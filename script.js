@@ -27,4 +27,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     requestAnimationFrame(raf);
+
+    const themeToggleBtn = document.getElementById('themeToggle');
+    
+    // 저장된 테마 불러오기 (기본값: 다크 모드)
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    
+    if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        if (themeToggleBtn) themeToggleBtn.textContent = '☀️';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (themeToggleBtn) themeToggleBtn.textContent = '🌙';
+    }
+
+    // 버튼 클릭 이벤트 리스너
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            
+            if (theme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.textContent = '☀️';
+            }
+        });
+    }
 });

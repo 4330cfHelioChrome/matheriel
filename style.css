@@ -740,3 +740,115 @@ html.lenis, html.lenis body {
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
+
+/* Header 내부 정렬 조정 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* 사이드바 토글 및 닫기 버튼 스타일 */
+.sidebar-toggle-btn, .sidebar-close-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 6px;
+    transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.sidebar-toggle-btn:hover, .sidebar-close-btn:hover {
+    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* 사이드바 패널 스타일 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px; /* 초기에는 화면 왼쪽 바깥으로 숨김 */
+    width: 280px;
+    height: 100vh;
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    transition: left var(--transition-speed) ease;
+}
+
+/* 사이드바가 열렸을 때 */
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.sidebar-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: all var(--transition-speed);
+}
+
+.sidebar-list a:hover, .sidebar-list a.active-sub-link {
+    color: var(--accent-color);
+    background: rgba(0, 255, 204, 0.05);
+    padding-left: 1rem;
+}
+
+/* 배경 어두워지는 오버레이 스타일 */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-speed), visibility var(--transition-speed);
+}
+
+.sidebar-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}

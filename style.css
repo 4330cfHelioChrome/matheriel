@@ -656,3 +656,26 @@ html.lenis, html.lenis body {
     color: var(--accent-color);
     transform: translateX(-4px);
 }
+
+/* 마우스 호버 이펙트가 없는 정적 카드 스타일 */
+.card.card-static {
+    transform: none !important;
+    border-color: var(--border-color) !important;
+    box-shadow: none !important;
+    cursor: default;
+}
+
+.card.card-static::before {
+    background-color: var(--border-color) !important;
+}
+
+/* 만약 링크 내부에 쓰이거나 부모에 의해 호버가 강제될 때를 대비한 방어 코드 */
+.card-link:hover .card.card-static {
+    transform: none !important;
+    border-color: var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.card-link:hover .card.card-static::before {
+    background-color: var(--border-color) !important;
+}

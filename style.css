@@ -679,3 +679,47 @@ html.lenis, html.lenis body {
 .card-link:hover .card.card-static::before {
     background-color: var(--border-color) !important;
 }
+
+/* 라이트 모드 컬러 변수 정의 */
+[data-theme="light"] {
+    --bg-color: #f5f5f7;
+    --card-bg: #ffffff;
+    --text-color: #1a1a1f;
+    --text-muted: #5f6368;
+    --accent-color: #00b388; /* 라이트모드 가독성을 고려한 조금 더 진한 포인트 컬러 */
+    --accent-glow: rgba(0, 179, 136, 0.15);
+    --border-color: #e0e0e5;
+}
+
+[data-theme="light"] header {
+    background-color: rgba(245, 245, 247, 0.85);
+}
+
+[data-theme="light"] th {
+    background-color: #eaeaf0;
+}
+
+[data-theme="light"] tr:hover td {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* 테마 전환 버튼 스타일 */
+.theme-toggle-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 6px;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all var(--transition-speed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-glow);
+}

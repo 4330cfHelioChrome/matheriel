@@ -690,6 +690,7 @@ html.lenis, html.lenis body {
     --accent-color: #00b388; /* 라이트모드 가독성을 고려한 조금 더 진한 포인트 컬러 */
     --accent-glow: rgba(0, 179, 136, 0.15);
     --border-color: #e0e0e5;
+    --h1-gradient-start: #1a1a1f; /* 추가 (다크할 때 쓰는 진한 텍스트 컬러 재사용) */
 }
 
 [data-theme="light"] header {

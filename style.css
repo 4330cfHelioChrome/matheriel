@@ -7,6 +7,7 @@
     --accent-glow: rgba(0, 255, 204, 0.15);
     --border-color: #22222c;
     --transition-speed: 0.3s;
+    --h1-gradient-start: #ffffff; /* 추가 */
 }
 
 * {

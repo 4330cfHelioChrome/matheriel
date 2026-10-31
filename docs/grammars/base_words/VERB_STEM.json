@@ -25,13 +25,118 @@
     "added-date": "2026-10-31"
   },
   {
-    "word": "∈△÷",
+    "word": "▽△÷",
     "definition": "To die, to pass away, to decease, 죽-",
     "added-date": "2026-10-31"
   },
   {
     "word": "!∼∥",
     "definition": "To like, to prefer, to enjoy, to love, 좋아하-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "!∼⊥",
+    "definition": "To dislike, to hate, to detest, 싫어하-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "S≡",
+    "definition": "To sleep, 자-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "S≡π",
+    "definition": "To wake up, to awaken, 깨-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "≥ΠΔ",
+    "definition": "To sit, 앉-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "≥Π▽",
+    "definition": "To stand, 서-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "⊥!!",
+    "definition": "To win, to defeat, 이기-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∥!!",
+    "definition": "To lose, to be defeated, 지-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "~≈",
+    "definition": "To turn, to rotate, 돌-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Q+1",
+    "definition": "To give, 주-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Q-!",
+    "definition": "To receive, to get, 받-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Π⊢3",
+    "definition": "To buy, to purchase, 사-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Π⊢U",
+    "definition": "To sell, 팔-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∩-×",
+    "definition": "To write, to use, 쓴-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∪⊥×",
+    "definition": "To read, 읽-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∼∡⊲",
+    "definition": "To speak, to talk, to say, 말하-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "UU!",
+    "definition": "To love, 사랑하-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Ψ∪Q",
+    "definition": "To open, 열-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Ψ∩Q",
+    "definition": "To close, to shut, 닫-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∡∩!",
+    "definition": "To play, to hang out, 놀-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "!→",
+    "definition": "To throw, 던지-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "Π→",
+    "definition": "To have, to possess, 갖-",
     "added-date": "2026-10-31"
   }
 ]

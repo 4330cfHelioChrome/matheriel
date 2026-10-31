@@ -1,7 +1,37 @@
 [
   {
     "word": "π!",
-    "definition": "'To eat' in English, '먹-' in Korean",
+    "definition": "To eat, to consume, 먹-",
     "added-date": "2026-10-22"
+  },
+  {
+    "word": "∈∇÷",
+    "definition": "To grow, to mature, 자라-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "△≡",
+    "definition": "To go, to move, to travel, 가-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "×≡",
+    "definition": "To do, to perform, to conduct, to execute, 하-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∈△×",
+    "definition": "To live, to dwell, to reside, to inhabit, to be alive, 살-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∈△÷",
+    "definition": "To die, to pass away, to decease, 죽-",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "!∼∥",
+    "definition": "To like, to prefer, to enjoy, to love, 좋아하-",
+    "added-date": "2026-10-31"
   }
 ]

@@ -3,5 +3,25 @@
     "word": "÷",
     "definition": "-다",
     "added-date": "2026-10-22"
+  },
+  {
+    "word": "+",
+    "definition": "-고, and, connective suffix",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "≈",
+    "definition": "-자 (청유형), propositive, 'Let's...'",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "=",
+    "definition": "-라 (명령형), imperative, command",
+    "added-date": "2026-10-31"
+  },
+  {
+    "word": "∑",
+    "definition": "-니, interrogative, question ending",
+    "added-date": "2026-10-31"
   }
 ]

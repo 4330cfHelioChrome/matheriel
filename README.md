@@ -1,3 +1,3 @@
 # Matheriel
 Matheriel, a human-made language only using mathematical symbols.<br>
-JUST FOR FUN
+Made by project Matheriel
